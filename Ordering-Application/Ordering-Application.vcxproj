@@ -132,6 +132,13 @@
   <ItemGroup>
     <Text Include="products.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="InventoryManager.h" />
+    <ClInclude Include="OrderingSystem.h" />
+    <ClInclude Include="Product.h" />
+    <ClInclude Include="ShoppingCart.h" />
+    <ClInclude Include="User.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -1,0 +1,5 @@
+SP01,Tra Sua Tran Chau,35000,50
+SP02,Ca Phe Sua Da,25000,100
+SP03,Banh Mi Thit,20000,30
+SP04,Sinh To Bo,40000,20
+SP05,Tra Dao Cam Sa,30000,45

@@ -16,3 +16,5 @@ o Expected delivery date
 o Selected products and corresponding quantities  
 o Shipping fee  
 o Total payment amount 
+
+https://docs.google.com/spreadsheets/d/1KGTucRQSs5rsFU7Px6xhkOlHOXwsRZrevEfjc2t0_H0/edit?gid=1345571135#gid=1345571135

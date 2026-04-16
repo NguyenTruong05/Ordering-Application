@@ -5,6 +5,9 @@
 #include "ShoppingCart.h"
 #include <fstream>
 #include <iostream> 
+#include "Customer.h"
+#include "VIPCustomer.h"
+#include "Admin.h"
 
 class OrderingSystem {
 private:

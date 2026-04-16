@@ -20,8 +20,15 @@ public:
 
     // VÙNG CODE CỦA TV4: Nạp chồng toán tử <<, >> và ==
     friend std::ostream& operator<<(std::ostream& out, const Product& p) {
-        out << std::left << std::setw(10) << p.id << std::setw(20) << p.name << p.price;
+        out << std::left
+            << std::setw(10) << p.id
+            << std::setw(25) << p.name
+            << std::setw(12) << p.price
+            << std::setw(8) << p.stock;
         return out;
     }
-    bool operator==(const Product& other) const { return this->id == other.id; }
+
+    bool operator==(const Product& other) const {
+        return id == other.id;
+    }
 };

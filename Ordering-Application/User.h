@@ -14,11 +14,19 @@ public:
 
     std::string getName() const { return name; }
     std::string getAddr() const { return address; }
-};
+    std::string getPhone() const { return phone; }
 
-class VIPCustomer : public User {
-public:
-    VIPCustomer(std::string n, std::string p, std::string a) : User(n, p, a) {}
-    double getDiscount() const override { return 0.1; } // Giảm 10%
-    std::string getType() const override { return "VIP"; }
-};
+    void setName(const std::string& n) {
+        name = n;
+    }
+
+    void setPhone(const std::string& p) {
+        phone = p;
+    }
+
+    void setAddr(const std::string& a) {
+        address = a;
+    }
+};  
+
+

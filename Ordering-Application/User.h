@@ -27,6 +27,6 @@ public:
     void setAddr(const std::string& a) {
         address = a;
     }
-};  
+};
 
 

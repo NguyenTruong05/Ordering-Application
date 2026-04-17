@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include <vector>
 #include <iostream>
 #include <string>
@@ -11,6 +11,11 @@ private:
     std::vector<T> items;
 
 public:
+    // dat truoc vung do lon vector de tranh tran gay doi dia ch bo nho (safe cho findById)
+    InventoryManager() {
+        items.reserve(200);
+    }
+
     //  add
     void add(const T& item) {
         items.push_back(item);

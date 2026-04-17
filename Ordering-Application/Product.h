@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include <string>
 #include <iostream>
 #include <iomanip>
@@ -49,9 +49,12 @@ public:
         std::getline(in, p.id, ',');
         std::getline(in, p.name, ',');
         in >> p.price;
-        in.ignore(1); // bỏ dấu ,
+        in.ignore(1); 
         in >> p.stock;
-        in.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+        if (!in.eof()) {
+            in.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        }
         return in;
     }
 

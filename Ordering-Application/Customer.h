@@ -18,13 +18,14 @@ public:
     }
 
     friend std::istream& operator>>(std::istream& in, Customer& c) {
-        std::cout << "Nhap ten khach hang: ";
+
+        if (&in == &std::cin) std::cout << "Nhap ten khach hang: ";
         std::getline(in >> std::ws, c.name);
 
-        std::cout << "Nhap so dien thoai: ";
+        if (&in == &std::cin) std::cout << "Nhap so dien thoai: ";
         std::getline(in, c.phone);
 
-        std::cout << "Nhap dia chi: ";
+        if (&in == &std::cin) std::cout << "Nhap dia chi: ";
         std::getline(in, c.address);
 
         return in;

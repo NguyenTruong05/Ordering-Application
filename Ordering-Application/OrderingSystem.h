@@ -29,7 +29,23 @@ public:
 
             // Thành viên 2 sẽ dùng switch-case để xử lý choice ở đây
             switch (choice) {
-            case 1: std::cout << "Dang hien thi san pham...\n"; break;
+            case 1: std::cout << "Dang hien thi san pham...\n";
+                    store.displayAll();
+                    break;
+            case 2: {
+                int id;
+                std::cout << "Nhap ID san pham: ";
+                std::cin >> id;
+                Product p = store.getProductById(id);
+                cart.addProduct(p);
+                std::cout << "Da them vao gio hang!\n";
+                break;
+            }
+            case 3: std::cout << "Gio hang cua ban:\n";
+                    cart.showCart();
+                    std::cout << "Dang thanh toan...\n";
+                    cart.checkout();
+                    break;  
             case 0: std::cout << "Tam biet!\n"; break;
             default: std::cout << "Chua code chuc nang nay!\n";
             }
